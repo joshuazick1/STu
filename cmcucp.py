@@ -67,10 +67,11 @@ errors = []
 
 # Order Source: https://www.digitalspy.com/movies/a825774/marvel-cinematic-universe-in-chronological-order/
 
-addtv("Enterprise`", 1, 1, 26)
-addtv("Enterprise`", 2, 1, 26)
-addtv("Enterprise`", 3, 1, 24)
-addtv("Enterprise`", 4, 1, 22)
+addtv("Enterprise", 1, 1, 26)
+addtv("Enterprise", 2, 1, 26)
+addtv("Enterprise", 3, 1, 24)
+addtv("Enterprise", 4, 1, 22)
+addtv("The Original Series", 0, 1, 1)
 addmovie("Star Trek: The Motion Picture")
 
 print("----------------------------------------------------")
@@ -79,7 +80,7 @@ print("----------------------------------------------------")
 if len(items) > 0:
     playlist = Playlist.create(plex, plex_playlist, items)
 else:
-    print("Script couldn't find any items to add to your MCU playlist")
+    print("Script couldn't find any items to add to your Star Trek playlist")
     exit()
 
 # Get playlist duration
@@ -93,4 +94,4 @@ if len(errors) > 0:
     print("Run the script again once these items are in Plex.")
 
 print("----------------------------------------------------")
-print("Enjoy %(time)s of the MCU!" % {'time': time})
+print("Enjoy %(time)s of Star Trek!" % {'time': time})
