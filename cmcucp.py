@@ -67,10 +67,10 @@ errors = []
 
 # Order Source: https://www.digitalspy.com/movies/a825774/marvel-cinematic-universe-in-chronological-order/
 
-addtv("Star Trek: Enterprise", 1, 1, 26)
-addtv("Star Trek: Enterprise", 2, 1, 26)
-addtv("Star Trek: Enterprise", 3, 1, 24)
-addtv("Star Trek: Enterprise", 4, 1, 22)
+addtv("Enterprise", 1, 1, 26)
+addtv("Enterprise", 2, 1, 26)
+addtv("Enterprise", 3, 1, 24)
+addtv("Enterprise", 4, 1, 22)
 addmovie("Star Trek: The Motion Picture")
 
 print("----------------------------------------------------")
