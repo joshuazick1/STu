@@ -1,6 +1,6 @@
 # CMCUCP: The Complete Star Trek Chronological Playlist
 
-This is a simple script that generates a Plex playlist with everything in your library from the MCU, in chronological order (according to [this page](http://thestartrekchronologyproject.blogspot.com/)).
+This is a simple script that generates a Plex playlist with everything in your library from Star Trek, in chronological order (according to [this page](http://thestartrekchronologyproject.blogspot.com/)).
 
 Fun fact: This is about infinate days of continuous video.
 
