@@ -94,6 +94,7 @@ print("----------------------------------------------------")
 
 # Create playlist
 if len(items) > 0:
+    print()
     playlist = Playlist.create(plex, plex_playlist, items)
 else:
     print("Script couldn't find any items to add to your Star Trek playlist")
