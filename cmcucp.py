@@ -33,7 +33,7 @@ def addtv(show, season, episode, end = False):
     if not end:
         end = episode
     end = end + 1
-    show = "Star Trek: %(show)s" % { 'show': show }
+    show = "Star Trek: %(show)s"
     for number in range(episode, end):
         values = { 'show': show, 'season': season, 'number': number}
         try:
@@ -75,13 +75,20 @@ addtv("Enterprise", 4, 20, 21)
 addtv("The Original Series", 0, 1, 1)
 addtv("Discovery", 1, 1, 15)
 addtv("Discovery", 2, 1, 14)
-addtv("Discovery", 3, 1, 13)
 addtv("The Original Series", 1, 1, 29)
 addtv("The Original Series", 1, 2, 26)
 addtv("The Original Series", 3, 1, 9)
 addtv("Enterprise", 4, 18, 19)
 addtv("The Original Series", 3, 10, 24)
 addmovie("Star Trek: The Motion Picture")
+addtv("Lower Decks" 1, 1, 10)
+addmovie("Star Trek")
+addmovie("Star Trek Into Darkness")
+addmovie("Star Trek Beyond")
+addtv("Short Treks", 2, 6, 6)
+addtv("Picard", 1, 1, 10)
+addtv("Voyager", 4, 23, 23)
+addtv("Discovery", 3, 1, 13)
 
 print("----------------------------------------------------")
 
