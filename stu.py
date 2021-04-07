@@ -83,7 +83,7 @@ addtv("Enterprise", 4, 18, 19)
 addtv("The Original Series", 3, 10, 24)
 addmovie("Star Trek: The Motion Picture")
 
-addtv("Deep Space Nine" 6, 24, 24)
+addtv("Deep Space Nine", 6, 24, 24)
 addtv("Voyager", 4, 26, 26)
 addtv("Deep Space Nine", 6, 25, 26)
 addtv("Voyager", 5, 1, 5)
