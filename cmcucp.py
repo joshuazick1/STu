@@ -11,7 +11,7 @@ if len(sys.argv) < 4:
 plex_user = sys.argv[1]
 plex_pass = sys.argv[2]
 plex_server = sys.argv[3]
-plex_playlist = "Complete MCU Chronological Playlist"
+plex_playlist = "Complete Star Trek Chronological Playlist"
 
 if len(sys.argv) == 5:
     plex_playlist = sys.argv[4]
@@ -33,7 +33,7 @@ def addtv(show, season, episode, end = False):
     if not end:
         end = episode
     end = end + 1
-    show = "Marvel's %(show)s" % { 'show': show }
+    show = "Star Trek: %(show)s" % { 'show': show }
     show = show.replace("SHIELD", "S.H.I.E.L.D.")
     for number in range(episode, end):
         values = { 'show': show, 'season': season, 'number': number}
@@ -67,79 +67,11 @@ errors = []
 
 # Order Source: https://www.digitalspy.com/movies/a825774/marvel-cinematic-universe-in-chronological-order/
 
-addmovie("Captain America: The First Avenger")
-addtv("Agent Carter", 1, 1, 8)
-addtv("Agent Carter", 2, 1, 10)
-# Agent Carter (one-shot on Iron Man 3 DVD)
-addmovie("Captain Marvel")
-addmovie("Iron Man")
-addmovie("Iron Man 2")
-addmovie("The Incredible Hulk")
-# The Consultant (one-shot on the Thor DVD)
-# A Funny Thing Happened on the Way to Thor's Hammer (one-shot on the Captain America: The First Avenger DVD)
-addmovie("Thor")
-addmovie("The Avengers")
-# Item 47 (one-shot on the Avengers Assemble DVD)
-addmovie("Iron Man 3")
-# All Hail the King (one-shot on the Thor: The Dark World DVD)
-addtv("Agents of SHIELD", 1, 1, 7)
-addmovie("Thor: The Dark World")
-addtv("Agents of SHIELD", 1, 8, 16)
-addmovie("Captain America: The Winter Soldier")
-addtv("Agents of SHIELD", 1, 17, 22)
-addmovie("Guardians of the Galaxy")
-addmovie("Guardians of the Galaxy Vol. 2")
-addtv("Daredevil", 1, 1, 13)
-addtv("Agents of SHIELD", 2, 1, 10)
-addtv("Jessica Jones", 1, 1, 13)
-addtv("Agents of SHIELD", 2, 11, 19)
-addmovie("Avengers: Age of Ultron")
-addtv("Agents of SHIELD", 2, 20, 22)
-addtv("Daredevil", 2, 1, 4)
-addtv("Luke Cage", 1, 1, 4)
-addtv("Daredevil", 2, 5, 11)
-addtv("Luke Cage", 1, 5, 8)
-addtv("Daredevil", 2, 12, 13)
-addtv("Luke Cage", 1, 9, 13)
-addmovie("Ant-Man")
-addtv("Agents of SHIELD", 3, 1, 10)
-addtv("Agents of SHIELD", 3, 11, 19)
-addtv("Iron Fist", 1, 1, 13)
-addmovie("Captain America: Civil War")
-addtv("Agents of SHIELD", 3, 20, 22)
-addtv("The Defenders", 1, 1, 8)
-addtv("Agents of SHIELD", 4, 1, 6)
-addmovie("Doctor Strange")
-addmovie("Black Panther")
-addtv("Agents of SHIELD", 4, 7, 8)
-# Agents of SHIELD: Slingshot (season 1, eps 1-6)
-addtv("Agents of SHIELD", 4, 9, 22)
-addmovie("Spider-Man: Homecoming")
-addmovie("Thor: Ragnarok")
-addtv("Inhumans", 1, 1, 8)
-addtv("The Punisher", 1, 1, 13)
-addtv("Runaways", 1, 1, 10)
-addtv("Agents of SHIELD", 5, 1, 10) # allowing for time travel craziness
-addtv("Jessica Jones", 2, 1, 13)
-addtv("Agents of SHIELD", 5, 11, 18)
-addtv("Cloak & Dagger", 1, 1, 10)
-addtv("Cloak & Dagger", 2, 1, 10)
-addtv("Luke Cage", 2, 1, 13)
-addtv("Iron Fist", 2, 1, 10)
-addtv("Daredevil", 3, 1, 13)
-addtv("Runaways", 2, 1, 13)
-addtv("The Punisher", 2, 1, 13)
-addtv("Jessica Jones", 3, 1, 13)
-addmovie("Ant-Man and the Wasp")
-addmovie("Avengers: Infinity War")
-addtv("Agents of SHIELD", 5, 19, 22) # Concurrent with Infinity War
-addtv("Agents of SHIELD", 6, 1, 13) # takes place in Endgame's five-year time jump
-addtv("Agents of SHIELD", 7, 1, 13) # takes place in Endgame's five-year time jump
-addtv("Runaways", 3, 1, 10)
-addmovie("Avengers: Endgame")
-addtv("WandaVision", 1, 1, 9)
-addtv("The Falcon and the Winter Soldier", 1, 1, 6)
-addmovie("Spider-Man: Far From Home")
+addtv("Star Trek: Enterprise", 1, 1, 26)
+addtv("Star Trek: Enterprise", 2, 1, 26)
+addtv("Star Trek: Enterprise", 3, 1, 24)
+addtv("Star Trek: Enterprise", 4, 1, 22)
+addmovie("Star Trek: The Motion Picture")
 
 print("----------------------------------------------------")
 
