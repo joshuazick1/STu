@@ -20,6 +20,6 @@ Fun fact: This is about infinate days of continuous video.
 - Install the dependencies with `pip install -r requirements.txt`.
 
 ### Usage
-- Just run `python cmcucp.py PLEX_USER PLEX_PASS PLEX_SERVER`.
+- Just run `python stu.py PLEX_USER PLEX_PASS PLEX_SERVER`.
 - Wait.
 - It will create a new playlist in your Plex library and report any items it couldn't find.
