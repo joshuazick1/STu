@@ -1,8 +1,8 @@
-# CMCUCP: The Complete Marvel Cinematic Universe Chronological Playlist
+# CMCUCP: The Complete Star Trek Chronological Playlist
 
-This is a simple script that generates a Plex playlist with everything in your library from the MCU, in chronological order (according to [this page](https://www.digitalspy.com/movies/a825774/marvel-cinematic-universe-in-chronological-order/)).
+This is a simple script that generates a Plex playlist with everything in your library from the MCU, in chronological order (according to [this page](http://thestartrekchronologyproject.blogspot.com/)).
 
-Fun fact: This is about 15 days of continuous video.
+Fun fact: This is about infinate days of continuous video.
 
 ## The new fancy docker way
 
