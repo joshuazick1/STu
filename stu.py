@@ -85,7 +85,7 @@ addmovie("Star Trek: The Motion Picture")
 
 
 addmovie("Star Trek: Insurrection")
-addtv("Deep Space Nine" 7, 11, 11)
+addtv("Deep Space Nine", 7, 11, 11)
 addtv("Voyager", 5, 11, 12)
 addtv("Deep Space Nine", 7, 12, 12)
 addtv("Voyager", 5, 13, 13)
