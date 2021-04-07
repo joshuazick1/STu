@@ -33,7 +33,7 @@ def addtv(show, season, episode, end = False):
     if not end:
         end = episode
     end = end + 1
-    show = "Star Trek: %(show)s"
+    show = "Star Trek: %(show)s" % { 'show': show }
     for number in range(episode, end):
         values = { 'show': show, 'season': season, 'number': number}
         try:
