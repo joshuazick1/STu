@@ -34,7 +34,6 @@ def addtv(show, season, episode, end = False):
         end = episode
     end = end + 1
     show = "Star Trek: %(show)s" % { 'show': show }
-    show = show.replace("SHIELD", "S.H.I.E.L.D.")
     for number in range(episode, end):
         values = { 'show': show, 'season': season, 'number': number}
         try:
@@ -65,13 +64,23 @@ except:
 items = []
 errors = []
 
-# Order Source: https://www.digitalspy.com/movies/a825774/marvel-cinematic-universe-in-chronological-order/
+# Order Source: http://thestartrekchronologyproject.blogspot.com/
+# Rough Draft, will need to do individual episode ordering later
 
 addtv("Enterprise", 1, 1, 26)
 addtv("Enterprise", 2, 1, 26)
 addtv("Enterprise", 3, 1, 24)
-addtv("Enterprise", 4, 1, 22)
+addtv("Enterprise", 4, 1, 17)
+addtv("Enterprise", 4, 20, 21)
 addtv("The Original Series", 0, 1, 1)
+addtv("Discovery", 1, 1, 15)
+addtv("Discovery", 2, 1, 14)
+addtv("Discovery", 3, 1, 13)
+addtv("The Original Series", 1, 1, 29)
+addtv("The Original Series", 1, 2, 26)
+addtv("The Original Series", 3, 1, 9)
+addtv("Enterprise", 4, 18, 19)
+addtv("The Original Series", 3, 10, 24)
 addmovie("Star Trek: The Motion Picture")
 
 print("----------------------------------------------------")
