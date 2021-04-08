@@ -5,6 +5,6 @@ WORKDIR /app
 COPY requirements.txt /app/requirements.txt
 RUN pip install -r requirements.txt
 
-COPY cmcucp.py /app/cmcucp.py
+COPY stu.py /app/stu.py
 
-ENTRYPOINT ["python", "/app/cmcucp.py"]
+ENTRYPOINT ["python", "/app/stu.py"]
